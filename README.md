@@ -192,7 +192,7 @@ em=test.changed@duke.edu
 ```
 
 
-|![](Assets/hw1_testcase10.png)|![](Assets/hw1_testcase11.png)|![](Assets/hw1_testcase12.png)|
+|![](Assets/hw1_testcase10.png)|![](Assets/hw1_testcase11.png)|![](Assets/hw1_testcase21.png)|
 |---|---|---|
 
 #### Find
@@ -223,7 +223,7 @@ ln=Hu
 fn=Andrew, ln=Hu
 ```
 
-|![](Assets/hw1_testcase13.png)|![](Assets/hw1_testcase14.png)|![](Assets/hw1_testcase15.png)|
+|![](Assets/hw1_testcase12.png)|![](Assets/hw1_testcase13.png)|![](Assets/hw1_testcase14.png)|
 |---|---|---|
 
 - 16.Find with any name
@@ -253,7 +253,7 @@ ln=*,fn=*
 ln=Teleford
 ```
 
-|![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase17.png)|
+|![](Assets/hw1_testcase15.png)|![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase17.png)|
 |---|---|---|
 
 #### List All
