@@ -24,17 +24,7 @@ class ViewController: UIViewController {
     
     let dataModel = DukePersonDict()
     
-    let statusLabelColorRed = UIColor(red: 194/255.0, green: 31/255.0, blue: 48/255.0, alpha: 0.75)
-    let statusLabelColorGreen = UIColor(red: 18/255.0, green: 170/255.0, blue: 156/255.0, alpha: 0.9)
-    let statusLabelColorBlack = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.75)
-    let normalColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.75)
-    let baseBackgroundColor = UIColor.white
-    let inputBackgroundColor = UIColor(red: 92/255.0, green: 179/255.0, blue: 204/255.0, alpha: 0.3)
-    let outputBackgroundColor = UIColor(red: 164/255.0, green: 172/255.0, blue: 167/255.0, alpha: 0.3)
-    let buttonBackgroundColor = UIColor(red: 110/255.0, green: 139/255.0, blue: 116/255.0, alpha: 0.3)
-    let buttonBackgroundColorFocused = UIColor(red: 110/255.0, green: 139/255.0, blue: 116/255.0, alpha: 0.55)
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -283,31 +273,7 @@ class ViewController: UIViewController {
                     outputViewInfo! += text
                 }
             case "Help":
-                outputViewInfo! += """
-                --------------------------------------- Help ---------------------------------------
-                Format:
-                fn=first_name, ln=last_name, em=email,
-                ro=role, ge=gender, fr=from
-                - ro must be one of: Student, TA, Professor, Staff, or will be Other
-                - ge must be one of: Male, Female, otherwise will be Other
-                - Either of these parameters must not contains ',', space, or '='
-                - The order of parameters does not matter
-                
-                1. Add: Add a person to the database.
-                    DUID is required, all other parameters are optional.
-                2. Update: Update or add a person with given DUID.
-                    DUID is required, all other parameters are optional.
-                3. Delete: Delete a person with given DUID.
-                    DUID is required, all other parameters are ignored.
-                4. Find: Find a person with given DUID or given name.
-                    Either DUID or lName is required, fName is default with "*".
-                    Use "*" to represent any name.
-                5. List All: List all people in the database.
-                6. Help: Show this help message.
-                
-                CopyRight: Yadong (Hugo) Hu, 2023
-                --------------------------------------------------------------------------------------\n
-                """
+                outputViewInfo! += helpText
             default:
                 outputViewInfo! += "Unknown error! + \n"
             }
