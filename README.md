@@ -93,6 +93,7 @@ fn=Hugo, ln=Hu, em=test.1@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
 fn=Andrew, ln=Hu, em=test.2@duke.edu, ro=TA
 ```
+
 |---|---|---|
 |![](Assets/hw1_testcase2.png) |![](Assets/hw1_testcase3.png) |![](Assets/hw1_testcase4.png) |
 |---|---|---|
@@ -105,7 +106,7 @@ fn=Andrew, ln=Hu, em=test.2@duke.edu, ro=TA
 fn=Hugo, lnHu
 ```
 **In this case, the invalid part will be ignored**
-![](Assets/hw1_testcase5.png)
+
 
 **Invalid:**
 - 5.DUID not provided
@@ -115,7 +116,7 @@ fn=Hugo, lnHu
 ```
 fn=Hugo, ln=Lei, em=test.3@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
-![](Assets/hw1_testcase6.png)
+
 
 - 6.DUID exists
 ```
@@ -124,7 +125,10 @@ fn=Hugo, ln=Lei, em=test.3@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
 
 ```
-![](Assets/hw1_testcase1.png)
+
+|---|---|---|
+![](Assets/hw1_testcase5.png) |![](Assets/hw1_testcase6.png) | ![](Assets/hw1_testcase1.png)|
+|---|---|---|
 
 #### Update
 **Valid:**
@@ -135,7 +139,7 @@ fn=Hugo, ln=Lei, em=test.3@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
 fn=Carol, ln=Lei, em=test.4@duke.edu, ro=Teacher, ge=SomethingElse, fr=New York
 ```
-![](Assets/hw1_testcase7.png)
+
 
 - 8.Update with existing DUID and partial parameters
 ```
@@ -144,7 +148,7 @@ fn=Carol, ln=Lei, em=test.4@duke.edu, ro=Teacher, ge=SomethingElse, fr=New York
 ```
 em=test.changed@duke.edu
 ```
-![](Assets/hw1_testcase8.png)
+
 
 - 9.Not existing DUID
 ```
@@ -154,7 +158,11 @@ em=test.changed@duke.edu
 em=test.changed@duke.edu
 ```
 **In this case, a new record will be added**
-![](Assets/hw1_testcase9.png)
+
+
+|---|---|---|
+|![](Assets/hw1_testcase7.png)|![](Assets/hw1_testcase8.png)|![](Assets/hw1_testcase9.png)|
+|---|---|---|
 
 **Invalid:**
 - 10.DUID exists, but parameter is empty
@@ -164,7 +172,7 @@ em=test.changed@duke.edu
 ```
 
 ```
-![](Assets/hw1_testcase10.png)
+
 
 #### Delete
 **Valid:**
@@ -175,7 +183,7 @@ em=test.changed@duke.edu
 ```
 
 ```
-![](Assets/hw1_testcase11.png)
+
 
 **Invalid:**
 - 12.Not existing DUID
@@ -185,7 +193,11 @@ em=test.changed@duke.edu
 ```
 
 ```
-![](Assets/hw1_testcase12.png)
+
+
+|---|---|---|
+|![](Assets/hw1_testcase10.png)|![](Assets/hw1_testcase11.png)|![](Assets/hw1_testcase12.png)|
+|---|---|---|
 
 #### Find
 **Valid:**
@@ -196,7 +208,7 @@ em=test.changed@duke.edu
 ```
 
 ```
-![](Assets/hw1_testcase13.png)
+
 
 - 14.Find with existing last name
 ```
@@ -205,7 +217,7 @@ em=test.changed@duke.edu
 ```
 ln=Hu
 ```
-![](Assets/hw1_testcase14.png)
+
 
 - 15.Find with exsiting first name and last name
 ```
@@ -214,7 +226,11 @@ ln=Hu
 ```
 fn=Andrew, ln=Hu
 ```
-![](Assets/hw1_testcase15.png)
+
+
+|---|---|---|
+|![](Assets/hw1_testcase13.png)|![](Assets/hw1_testcase14.png)|![](Assets/hw1_testcase15.png)|
+|---|---|---|
 
 - 16.Find with any name
 ```
@@ -223,7 +239,7 @@ fn=Andrew, ln=Hu
 ```
 ln=*,fn=*
 ```
-![](Assets/hw1_testcase16.png)
+
 
 **Invalid:**
 - 17.Not existing DUID
@@ -233,7 +249,7 @@ ln=*,fn=*
 ```
 
 ```
-![](Assets/hw1_testcase16.png)
+
 
 - 18.Not existing name
 ```
@@ -242,7 +258,10 @@ ln=*,fn=*
 ```
 ln=Teleford
 ```
-![](Assets/hw1_testcase17.png)
+
+|---|---|---|
+|![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase17.png)|
+|---|---|---|
 
 #### List All
 **Valid:**
@@ -253,7 +272,7 @@ ln=Teleford
 ```
 
 ```
-![](Assets/hw1_testcase18.png)
+
 
 #### Help
 **Valid:**
@@ -264,6 +283,7 @@ ln=Teleford
 ```
 
 ```
-![](Assets/hw1_testcase19.png)
 
-
+|---|---|---|
+|![](Assets/hw1_testcase18.png)|![](Assets/hw1_testcase19.png)|![](Assets/hw1_testcase20.png)|
+|---|---|---|

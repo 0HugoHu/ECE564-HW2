@@ -37,6 +37,7 @@
 		C297BE552AA981E800AE0592 /* hw1_testcase5.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE422AA981E800AE0592 /* hw1_testcase5.png */; };
 		C297BE562AA981E800AE0592 /* hw1_testcase17.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE432AA981E800AE0592 /* hw1_testcase17.png */; };
 		C297BE582AA982C600AE0592 /* hw1_testcase1.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE572AA982C600AE0592 /* hw1_testcase1.png */; };
+		C297BE5A2AA9863D00AE0592 /* hw1_testcase20.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE592AA9863D00AE0592 /* hw1_testcase20.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		C297BE422AA981E800AE0592 /* hw1_testcase5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase5.png; sourceTree = "<group>"; };
 		C297BE432AA981E800AE0592 /* hw1_testcase17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase17.png; sourceTree = "<group>"; };
 		C297BE572AA982C600AE0592 /* hw1_testcase1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase1.png; sourceTree = "<group>"; };
+		C297BE592AA9863D00AE0592 /* hw1_testcase20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase20.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		C297BE302AA9800E00AE0592 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C297BE592AA9863D00AE0592 /* hw1_testcase20.png */,
 				C297BE572AA982C600AE0592 /* hw1_testcase1.png */,
 				C297BE322AA981E800AE0592 /* hw1_testcase2.png */,
 				C297BE312AA981E800AE0592 /* hw1_testcase3.png */,
@@ -231,6 +234,7 @@
 				C297BE4F2AA981E800AE0592 /* hw1_testcase6.png in Resources */,
 				C297BE532AA981E800AE0592 /* hw1_testcase11.png in Resources */,
 				C297BE512AA981E800AE0592 /* hw1_testcase13.png in Resources */,
+				C297BE5A2AA9863D00AE0592 /* hw1_testcase20.png in Resources */,
 				C2939EEA2AA132CC00B6F9B1 /* Assets.xcassets in Resources */,
 				C297BE4A2AA981E800AE0592 /* hw1_testcase9.png in Resources */,
 				C297BE482AA981E800AE0592 /* hw1_testcase16.png in Resources */,
