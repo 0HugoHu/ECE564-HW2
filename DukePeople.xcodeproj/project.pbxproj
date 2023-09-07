@@ -13,6 +13,8 @@
 		C2939EE82AA132CB00B6F9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2939EE62AA132CB00B6F9B1 /* Main.storyboard */; };
 		C2939EEA2AA132CC00B6F9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2939EE92AA132CC00B6F9B1 /* Assets.xcassets */; };
 		C2939EED2AA132CC00B6F9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2939EEB2AA132CC00B6F9B1 /* LaunchScreen.storyboard */; };
+		C2939EF62AA78A4900B6F9B1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EF52AA78A4900B6F9B1 /* DataModel.swift */; };
+		C2939EF82AA78A6300B6F9B1 /* DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EF72AA78A6300B6F9B1 /* DataStructures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C2939EE92AA132CC00B6F9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2939EEC2AA132CC00B6F9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2939EEE2AA132CC00B6F9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2939EF52AA78A4900B6F9B1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C2939EF72AA78A6300B6F9B1 /* DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		C2939EDF2AA132CB00B6F9B1 /* DukePeople */ = {
 			isa = PBXGroup;
 			children = (
+				C2939EF42AA78A2200B6F9B1 /* Model */,
 				C2939EE02AA132CB00B6F9B1 /* AppDelegate.swift */,
 				C2939EE22AA132CB00B6F9B1 /* SceneDelegate.swift */,
 				C2939EE42AA132CB00B6F9B1 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				C2939EEE2AA132CC00B6F9B1 /* Info.plist */,
 			);
 			path = DukePeople;
+			sourceTree = "<group>";
+		};
+		C2939EF42AA78A2200B6F9B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2939EF52AA78A4900B6F9B1 /* DataModel.swift */,
+				C2939EF72AA78A6300B6F9B1 /* DataStructures.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2939EE52AA132CB00B6F9B1 /* ViewController.swift in Sources */,
+				C2939EF82AA78A6300B6F9B1 /* DataStructures.swift in Sources */,
+				C2939EF62AA78A4900B6F9B1 /* DataModel.swift in Sources */,
 				C2939EE12AA132CB00B6F9B1 /* AppDelegate.swift in Sources */,
 				C2939EE32AA132CB00B6F9B1 /* SceneDelegate.swift in Sources */,
 			);
