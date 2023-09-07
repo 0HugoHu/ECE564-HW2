@@ -73,7 +73,7 @@ CopyRight: Yadong (Hugo) Hu, 2023
 ```
 
 ```
-![](Assets/hw1_testcase1.png)
+![](Assets/hw1_testcase2.png)
 
 - 2.Add a person with DUID and full parameters
 ```
@@ -82,7 +82,7 @@ CopyRight: Yadong (Hugo) Hu, 2023
 ```
 fn=Hugo, ln=Hu, em=test.1@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
-![](Assets/hw1_testcase2.png)
+![](Assets/hw1_testcase3.png)
 
 - 3.Add a person with DUID and partial parameters
 ```
@@ -91,7 +91,7 @@ fn=Hugo, ln=Hu, em=test.1@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
 fn=Andrew, ln=Hu, em=test.2@duke.edu, ro=TA
 ```
-![](Assets/hw1_testcase3.png)
+![](Assets/hw1_testcase4.png)
 
 - 4.DUID provided, but parameter contains invalid notations
 ```
@@ -101,7 +101,7 @@ fn=Andrew, ln=Hu, em=test.2@duke.edu, ro=TA
 fn=Hugo, lnHu
 ```
 **In this case, the invalid part will be ignored**
-![](Assets/hw1_testcase4.png)
+![](Assets/hw1_testcase5.png)
 
 **Invalid:**
 - 5.DUID not provided
@@ -111,7 +111,7 @@ fn=Hugo, lnHu
 ```
 fn=Hugo, ln=Lei, em=test.3@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
-![](Assets/hw1_testcase5.png)
+![](Assets/hw1_testcase6.png)
 
 - 6.DUID exists
 ```
@@ -120,7 +120,7 @@ fn=Hugo, ln=Lei, em=test.3@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
 
 ```
-![](Assets/hw1_testcase6.png)
+![](Assets/hw1_testcase1.png)
 
 #### Update
 **Valid:**
