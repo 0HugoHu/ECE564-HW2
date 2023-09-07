@@ -25,7 +25,7 @@ let helpText = """
                 DUID is required, all other parameters are ignored.
             4. Find: Find a person with given DUID or given name.
                 Either DUID or lName is required, fName is default with "*".
-                Use "*" to represent any name.
+                Use "*" to represent any name. Not case sensitive.
             5. List All: List all people in the database.
             6. Help: Show this help message.
             

@@ -143,11 +143,11 @@ class DukePersonDict {
             // Find people based on lastName and firstName
             let filteredPeople = people.values.filter { person in
                 if lName == "*" {
-                    return person.fName == fName
+                    return person.fName.lowercased() == fName.lowercased()
                 } else if fName == "*" {
-                    return person.lName == lName
+                    return person.lName.lowercased() == lName.lowercased()
                 } else {
-                    return person.lName == lName && person.fName == fName
+                    return person.lName.lowercased() == lName.lowercased() && person.fName.lowercased() == fName.lowercased()
                 }
             }
             
