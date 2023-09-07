@@ -108,11 +108,11 @@
 		C2939EDF2AA132CB00B6F9B1 /* DukePeople */ = {
 			isa = PBXGroup;
 			children = (
+				C297BE5B2AA9883A00AE0592 /* Controller */,
 				C297BE282AA96BD500AE0592 /* Constant */,
 				C2939EF42AA78A2200B6F9B1 /* Model */,
 				C2939EE02AA132CB00B6F9B1 /* AppDelegate.swift */,
 				C2939EE22AA132CB00B6F9B1 /* SceneDelegate.swift */,
-				C2939EE42AA132CB00B6F9B1 /* ViewController.swift */,
 				C2939EE62AA132CB00B6F9B1 /* Main.storyboard */,
 				C2939EE92AA132CC00B6F9B1 /* Assets.xcassets */,
 				C2939EEB2AA132CC00B6F9B1 /* LaunchScreen.storyboard */,
@@ -164,6 +164,14 @@
 				C297BE412AA981E800AE0592 /* hw1_testcase19.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C297BE5B2AA9883A00AE0592 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2939EE42AA132CB00B6F9B1 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
