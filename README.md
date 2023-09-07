@@ -2,34 +2,36 @@
 
 ## Extra Functionality
 
-### Enhancements to the User Interface
+### 1.Enhancements to the User Interface
 - Add widths and heights constants, and automatically calculate the position of each components, so don't need to change in everywhere, if the device heights and widths changed.
 - Add pre-defined colors in /Constant/Colors.swift, so only change in this file can change the App's theme.
 - Very elegant and user-friendly user interface.
 
-### Interesting and/or broad use of Swift capabilities
+### 2.Interesting and/or broad use of Swift capabilities
 - Use SwiftUI scrollView to implement the output textfield, and whenever there is a new output, the scrollview will automatically scroll to the bottom.
 - Use Date() class to print every log time.
 
-### Interesting algorithm
+### 3.Interesting algorithm
 - Use a dictionary to store the data, and use the key to search the data, which is very efficient.
 
 <br />
 
 ## Code Reference
 
-### With the help of ChatGPT, I learn how to scroll to the bottom of the scrollview automatically whenever there's a new output.
+#### 1.With the help of ChatGPT, I learn how to scroll to the bottom of the scrollview automatically whenever there's a new output.
 ```swift
 let contentHeight = outputView.contentSize.height
 let offsetY = max(0, contentHeight - scrollView.bounds.size.height)
 outputView.setContentOffset(CGPoint(x: 0, y: offsetY), animated: true)
 ```
 
-### Also with ChatGPT, I learn how to disable the input textfield auto-correction and auto-capitalization.
+#### 2.Also with ChatGPT, I learn how to disable the input textfield auto-correction and auto-capitalization.
 ```swift
 inputFieldParam.autocapitalizationType = UITextAutocapitalizationType.none
 inputFieldParam.autocorrectionType = .no
 ```
+
+<br />
 
 ## Usage
 
@@ -73,7 +75,7 @@ CopyRight: Yadong (Hugo) Hu, 2023
 ```
 
 ```
-![](Assets/hw1_testcase2.png)
+
 
 - 2.Add a person with DUID and full parameters
 ```
@@ -82,7 +84,7 @@ CopyRight: Yadong (Hugo) Hu, 2023
 ```
 fn=Hugo, ln=Hu, em=test.1@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
-![](Assets/hw1_testcase3.png)
+
 
 - 3.Add a person with DUID and partial parameters
 ```
@@ -91,7 +93,9 @@ fn=Hugo, ln=Hu, em=test.1@duke.edu, ro=Student, ge=Male, fr=Durham
 ```
 fn=Andrew, ln=Hu, em=test.2@duke.edu, ro=TA
 ```
-![](Assets/hw1_testcase4.png)
+|---|---|---|
+|![](Assets/hw1_testcase2.png) |![](Assets/hw1_testcase3.png) |![](Assets/hw1_testcase4.png) |
+|---|---|---|
 
 - 4.DUID provided, but parameter contains invalid notations
 ```
