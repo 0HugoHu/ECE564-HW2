@@ -94,7 +94,6 @@ fn=Hugo, ln=Hu, em=test.1@duke.edu, ro=Student, ge=Male, fr=Durham
 fn=Andrew, ln=Hu, em=test.2@duke.edu, ro=TA
 ```
 
-|---|---|---|
 |![](Assets/hw1_testcase2.png) |![](Assets/hw1_testcase3.png) |![](Assets/hw1_testcase4.png) |
 |---|---|---|
 
@@ -126,7 +125,6 @@ fn=Hugo, ln=Lei, em=test.3@duke.edu, ro=Student, ge=Male, fr=Durham
 
 ```
 
-|---|---|---|
 ![](Assets/hw1_testcase5.png) |![](Assets/hw1_testcase6.png) | ![](Assets/hw1_testcase1.png)|
 |---|---|---|
 
@@ -160,7 +158,6 @@ em=test.changed@duke.edu
 **In this case, a new record will be added**
 
 
-|---|---|---|
 |![](Assets/hw1_testcase7.png)|![](Assets/hw1_testcase8.png)|![](Assets/hw1_testcase9.png)|
 |---|---|---|
 
@@ -195,7 +192,6 @@ em=test.changed@duke.edu
 ```
 
 
-|---|---|---|
 |![](Assets/hw1_testcase10.png)|![](Assets/hw1_testcase11.png)|![](Assets/hw1_testcase12.png)|
 |---|---|---|
 
@@ -227,8 +223,6 @@ ln=Hu
 fn=Andrew, ln=Hu
 ```
 
-
-|---|---|---|
 |![](Assets/hw1_testcase13.png)|![](Assets/hw1_testcase14.png)|![](Assets/hw1_testcase15.png)|
 |---|---|---|
 
@@ -259,7 +253,6 @@ ln=*,fn=*
 ln=Teleford
 ```
 
-|---|---|---|
 |![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase16.png)|![](Assets/hw1_testcase17.png)|
 |---|---|---|
 
@@ -284,6 +277,5 @@ ln=Teleford
 
 ```
 
-|---|---|---|
 |![](Assets/hw1_testcase18.png)|![](Assets/hw1_testcase19.png)|![](Assets/hw1_testcase20.png)|
 |---|---|---|
