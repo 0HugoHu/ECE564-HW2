@@ -1,5 +1,9 @@
 #  ECE564 HW2 - Persistent Storage
 
+> For the first time running the app, it will be slow to load the launch screen, because I used VRKit pakage.
+> Please ignore some run-time warnings, they are from the BackgroundRemoval dependency. There's no errors or warning at the build-time.
+
+
 ## Extra Functionality
 
 ### 1.A LaunchScreen
