@@ -19,7 +19,7 @@
 - Added the person's name to be more prominent
 
 
-|[](Assets/hw2_person1.png)|![](Assets/hw2_person2.png)|![](Assets/hw2_person4.png)|![](Assets/hw2_person3.png)|
+|![](Assets/hw2_person1.png)|![](Assets/hw2_person2.png)|![](Assets/hw2_person4.png)|![](Assets/hw2_person3.png)|
 |---|---|---|---|
 
 <br />
