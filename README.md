@@ -6,7 +6,7 @@
 - Very delicated and animated launch screen powered by ```RealityKit```
 - The 3D animation shows all kinds of marks representing different disciplines at the Duke University, while emphasizing the **DUKE** name
 
-|![Assets/hw2_launchscreen1.png]()|![Assets/hw2_launchscreen2.png]()|![Assets/hw2_launchscreen3.png]()|![Assets/hw2_launchscreen4.png]()|
+|![](Assets/hw2_launchscreen1.png)|![](Assets/hw2_launchscreen2.png)|![](Assets/hw2_launchscreen3.png)|![](Assets/hw2_launchscreen4.png)|
 |---|---|---|---|
 
 ### 2.Any new functions you want to add
@@ -18,17 +18,18 @@
 - Very awesome UI with **Glass Blur Effect** Textfield and **Gradient Transition** background
 - Added the person's name to be more prominent
 
-|![Assets/hw2_person1.png]()|![Assets/hw2_person2.png]()|![Assets/hw2_person4.png]()|![Assets/hw2_person3.png]()|
+
+|[](Assets/hw2_person1.png)|![](Assets/hw2_person2.png)|![](Assets/hw2_person4.png)|![](Assets/hw2_person3.png)|
 |---|---|---|---|
 
 <br />
 
 ## Code Reference
 
-#### 1.The Launch Screen was modified from the code of (@aheze)[https://github.com/aheze/RealityKitLaunchScreen] on GitHub
+#### 1.The Launch Screen was modified from the code of [@aheze](https://github.com/aheze/RealityKitLaunchScreen) on GitHub
 The original and modified code are all in ```DukePeople/LaunchScreen``` folder.
 
-#### 2.The Image Backgroud Removal used (BackgroundRemoval)[https://github.com/Ezaldeen99/BackgroundRemoval] dependency on GitHub
+#### 2.The Image Backgroud Removal used [BackgroundRemoval](https://github.com/Ezaldeen99/BackgroundRemoval) dependency on GitHub
 Use of the Removal model:
 ```swift
 let image = UIImage(named: "child")
