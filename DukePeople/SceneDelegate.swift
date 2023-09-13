@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +17,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        // Ensure the scene is of type UIWindowScene
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        let contentView = ContentView()
+        let hostingController = UIHostingController(rootView: contentView)
+
+        window.rootViewController = hostingController
+        self.window = window
+        window.makeKeyAndVisible()
+        // Delay for a few seconds and then transition to the default main view
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) { // Change 3 to the desired delay in seconds
+            self.transitionToDefaultMainView()
+        }
+    }
+    
+    // Transition to the default main view
+    func transitionToDefaultMainView() {
+        let mainViewController = ViewController()
+        window?.rootViewController = mainViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

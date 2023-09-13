@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DukePersonVC" customModule="Hugo" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="iF6-3f-Nv6" id="7GP-U1-ebx"/>
                 <outlet property="descriptionLabel" destination="rKo-ha-3pw" id="ZHs-s2-G76"/>
                 <outlet property="firstNameLabel" destination="NA9-1Z-Lef" id="iqn-ue-bZb"/>
                 <outlet property="gradientView" destination="s4l-3g-8Cb" id="VyT-Xe-ghj"/>

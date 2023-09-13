@@ -8,7 +8,18 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DukePersonVCDelegate {
+    var validInput = true
+    var errorString : String? = nil
+    
+    /*
+     Callback for DukePersonVCDelegate error message
+     */
+    func didEncounterError(errorMessage: String) {
+        validInput = true
+        errorString = errorMessage
+    }
+    
     let inputFieldDUID = UITextField()
     let inputFieldParam = UITextField()
     let statusTextLabel = UILabel()
@@ -21,7 +32,6 @@ class ViewController: UIViewController {
     let helpButton = UIButton()
     let outputView = UITextView()
     let scrollView = UIScrollView()
-    
     
     var dataModel: DukePersonDict!
 
@@ -177,8 +187,8 @@ class ViewController: UIViewController {
         var enteredDUID : Int = 0
         var enteredPerson : DukePerson = DukePerson(DUID: 0, fName: "", lName: "", email: "", from: "", gender: .Unknown, role: .Unknown)
         var findUUID = false
-        var validInput = true
-        var errorString : String? = nil
+        validInput = true
+        errorString = nil
         
         // Get button event
         if let label = sender.titleLabel {
@@ -295,8 +305,14 @@ class ViewController: UIViewController {
             statusLabel.textColor = statusLabelColorRed
             statusLabel.text = "Operation failed!"
         } else {
-            statusLabel.textColor = statusLabelColorGreen
-            statusLabel.text = "Operation succeeded!"
+            // Save data model
+            if !dataModel.save() {
+                statusLabel.textColor = statusLabelColorRed
+                statusLabel.text = "Save failed!"
+            } else {
+                statusLabel.textColor = statusLabelColorGreen
+                statusLabel.text = "Operation succeeded!"
+            }
         }
         
         inputFieldDUID.text = ""
@@ -356,6 +372,7 @@ class ViewController: UIViewController {
         return DukePerson(DUID: DUID, fName: fName, lName: lName, email: email, from: from, gender: gender, role: role)
     }
     
+    
     /*
      Scroll to the bottom of the output view
      */
@@ -365,11 +382,13 @@ class ViewController: UIViewController {
         outputView.setContentOffset(CGPoint(x: 0, y: offsetY), animated: true)
     }
     
+    
     /*
      Push a stacked student profile view
      */
     func pushNewViewController(_ fName: String, _ lName: String, _ description: String, _ url: String) {
         let pvc = DukePersonVC(nibName: "DukePersonView", bundle: nil)
+        pvc.delegate = self
         pvc.firstName = fName
         pvc.lastName = lName
         pvc.descriptionText = description

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20B0B502AB24EB7001B52A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B4F2AB24EB7001B52A7 /* ContentView.swift */; };
+		C20B0B522AB24EC9001B52A7 /* LaunchConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B512AB24EC9001B52A7 /* LaunchConstants.swift */; };
+		C20B0B542AB24EDE001B52A7 /* LaunchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B532AB24EDE001B52A7 /* LaunchModels.swift */; };
+		C20B0B562AB24EF2001B52A7 /* LaunchVC+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B552AB24EF2001B52A7 /* LaunchVC+Scene.swift */; };
+		C20B0B582AB24F07001B52A7 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B572AB24F07001B52A7 /* LaunchViewController.swift */; };
+		C20B0B5A2AB24F17001B52A7 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B592AB24F17001B52A7 /* LaunchViewModel.swift */; };
+		C20B0B5C2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B5B2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift */; };
+		C20B0B5E2AB24F37001B52A7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B5D2AB24F37001B52A7 /* Utilities.swift */; };
 		C2939EE12AA132CB00B6F9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EE02AA132CB00B6F9B1 /* AppDelegate.swift */; };
 		C2939EE32AA132CB00B6F9B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EE22AA132CB00B6F9B1 /* SceneDelegate.swift */; };
 		C2939EE52AA132CB00B6F9B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EE42AA132CB00B6F9B1 /* ViewController.swift */; };
@@ -47,6 +55,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20B0B4F2AB24EB7001B52A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C20B0B512AB24EC9001B52A7 /* LaunchConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchConstants.swift; sourceTree = "<group>"; };
+		C20B0B532AB24EDE001B52A7 /* LaunchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModels.swift; sourceTree = "<group>"; };
+		C20B0B552AB24EF2001B52A7 /* LaunchVC+Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchVC+Scene.swift"; sourceTree = "<group>"; };
+		C20B0B572AB24F07001B52A7 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		C20B0B592AB24F17001B52A7 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		C20B0B5B2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitLaunchScreenApp.swift; sourceTree = "<group>"; };
+		C20B0B5D2AB24F37001B52A7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C2939EDD2AA132CB00B6F9B1 /* Hugo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hugo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2939EE02AA132CB00B6F9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2939EE22AA132CB00B6F9B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +115,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C20B0B4E2AB24E9F001B52A7 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C20B0B4F2AB24EB7001B52A7 /* ContentView.swift */,
+				C20B0B512AB24EC9001B52A7 /* LaunchConstants.swift */,
+				C20B0B532AB24EDE001B52A7 /* LaunchModels.swift */,
+				C20B0B552AB24EF2001B52A7 /* LaunchVC+Scene.swift */,
+				C20B0B572AB24F07001B52A7 /* LaunchViewController.swift */,
+				C20B0B592AB24F17001B52A7 /* LaunchViewModel.swift */,
+				C20B0B5B2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift */,
+				C20B0B5D2AB24F37001B52A7 /* Utilities.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		C2939ED42AA132CB00B6F9B1 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +151,7 @@
 		C2939EDF2AA132CB00B6F9B1 /* DukePeople */ = {
 			isa = PBXGroup;
 			children = (
+				C20B0B4E2AB24E9F001B52A7 /* LaunchScreen */,
 				C2B363232AAFF29F007D4A6F /* Util */,
 				C2B3631C2AAA1657007D4A6F /* View */,
 				C297BE5B2AA9883A00AE0592 /* Controller */,
@@ -308,12 +340,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2939EE52AA132CB00B6F9B1 /* ViewController.swift in Sources */,
+				C20B0B582AB24F07001B52A7 /* LaunchViewController.swift in Sources */,
+				C20B0B502AB24EB7001B52A7 /* ContentView.swift in Sources */,
+				C20B0B542AB24EDE001B52A7 /* LaunchModels.swift in Sources */,
 				C2939EF82AA78A6300B6F9B1 /* DataStructures.swift in Sources */,
 				C2939EF62AA78A4900B6F9B1 /* DataModel.swift in Sources */,
+				C20B0B5E2AB24F37001B52A7 /* Utilities.swift in Sources */,
 				C2C34C0D2AB0303B00E7B201 /* GradientImageView.swift in Sources */,
+				C20B0B5A2AB24F17001B52A7 /* LaunchViewModel.swift in Sources */,
 				C297BE2C2AA96C4F00AE0592 /* Colors.swift in Sources */,
 				C2C34C072AB0006500E7B201 /* GetPath.swift in Sources */,
+				C20B0B562AB24EF2001B52A7 /* LaunchVC+Scene.swift in Sources */,
 				C2939EE12AA132CB00B6F9B1 /* AppDelegate.swift in Sources */,
+				C20B0B522AB24EC9001B52A7 /* LaunchConstants.swift in Sources */,
+				C20B0B5C2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift in Sources */,
 				C297BE2A2AA96BF000AE0592 /* Strings.swift in Sources */,
 				C2B3631F2AAFD651007D4A6F /* DukePersonVC.swift in Sources */,
 				C2939EE32AA132CB00B6F9B1 /* SceneDelegate.swift in Sources */,

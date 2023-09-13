@@ -1,13 +1,20 @@
 //
-//  File.swift
+//  GradientImageView.swift
 //
 //
-//  Created by Aditya Yadav on 17/04/23.
-//  Largely modifyed by Hugo Hu on 9/12/23.
+//  Created by Hugo Hu on 9/12/23.
 //
 
 import Foundation
 import SwiftUI
+
+/*
+ This protocol is used to pass back action to the DukePersonVC
+ */
+protocol GradientImageViewDelegate: AnyObject {
+    func didTapBackButton()
+}
+
 
 public struct GradientImageView : View {
     var image: Image
@@ -15,8 +22,8 @@ public struct GradientImageView : View {
     var width: CGFloat
     var lName: String
     var description: String
-    var blurStyle : UIBlurEffect.Style = .systemUltraThinMaterialLight
-
+    var blurStyle: UIBlurEffect.Style = .systemUltraThinMaterialLight
+    weak var delegate: GradientImageViewDelegate?
     
     public init(image: Image, lName: String, desc: String) {
         self.image = image
@@ -87,7 +94,9 @@ public struct GradientImageView : View {
                 .offset(x: 0, y: 365)
                 
                 ZStack {
-                    Button {} label: {
+                    Button (action:{
+                        self.delegate?.didTapBackButton()
+                    }, label: {
                         Text("Back")
                             .padding(.horizontal, 20)
                             .padding(.vertical, 8)
@@ -95,19 +104,20 @@ public struct GradientImageView : View {
                             .environment(\.colorScheme, .dark)
                             .foregroundColor(.white)
                             .frame(width: 150, height: 40)
-                    }
-                    
+                        
+                    })
                 }
                 .offset(x: 0, y: 550)
             }
-            
         }
         .background(blurColor)
-        
     }
 }
 
 
+/*
+ Update image with blur effect
+ */
 struct VisualEffectView: UIViewRepresentable {
     var effect: UIVisualEffect?
     
@@ -121,9 +131,12 @@ struct VisualEffectView: UIViewRepresentable {
 }
 
 
+/*
+ Add a blur effect to the background
+ */
 struct GreenBackgroundView: View {
     var body: some View {
-        Color(red: 109/255.0, green: 185/255.0, blue: 132/255.0, opacity: 1)
+        blurColor
             .frame(width: 393, height: 100)
     }
 }
