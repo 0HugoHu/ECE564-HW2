@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Role : String {
+enum Role : String, Codable {
     case Unknown = "Unknown" // has not been specified
     case Professor = "Professor"
     case TA = "TA"
@@ -16,7 +16,7 @@ enum Role : String {
 }
 
 
-enum Gender : String {
+enum Gender : String, Codable {
     case Unknown = "Unknown" // has not been specified
     case Male = "Male"
     case Female = "Female"

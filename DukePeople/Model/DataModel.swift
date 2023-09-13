@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 // Duke Person Data Model
-struct DukePerson : CustomStringConvertible {
+struct DukePerson : CustomStringConvertible, Codable {
     let DUID: Int
     var fName: String
     var lName: String
@@ -16,6 +17,9 @@ struct DukePerson : CustomStringConvertible {
     var from: String
     var gender: Gender
     var role: Role
+    var program: String
+    var plan: String
+    var picture: String
     
     
     // Custom description
@@ -29,9 +33,12 @@ struct DukePerson : CustomStringConvertible {
         default:
             pronoun = ("They", "Them")
         }
-        return "\(fName) \(lName) is a \(role). \(pronoun.subject) is from \(from). You can reach \(pronoun.object.lowercased()) at \(email)."
+        if role == .Student {
+            return "\(fName) \(lName) is a Student. \(pronoun.subject) is in the \(program) program working towards a \(plan) degree. You can reach \(pronoun.object.lowercased()) at \(email)."
+        } else {
+            return "\(fName) \(lName) is a \(role). \(pronoun.subject) is from \(from). You can reach \(pronoun.object.lowercased()) at \(email)."
+        }
     }
-    
     
     init(DUID: Int, fName: String, lName: String, email: String, from: String, gender: Gender, role: Role) {
         self.DUID = DUID
@@ -41,6 +48,22 @@ struct DukePerson : CustomStringConvertible {
         self.from = from
         self.gender = gender
         self.role = role
+        self.program = ""
+        self.plan = ""
+        self.picture = ""
+    }
+    
+    init(DUID: Int, fName: String, lName: String, email: String, from: String, gender: Gender, role: Role, program: String, plan: String, picture: String) {
+        self.DUID = DUID
+        self.fName = fName
+        self.lName = lName
+        self.email = email
+        self.from = from
+        self.gender = gender
+        self.role = role
+        self.program = program
+        self.plan = plan
+        self.picture = picture
     }
 }
 
@@ -49,9 +72,18 @@ struct DukePerson : CustomStringConvertible {
 class DukePersonDict {
     // A dictionary to store DukePerson objects
     var people: [Int : DukePerson]
+    let url: URL
     
-    init() {
-        people = [:]
+    
+    init(url: URL) {
+        self.people = [Int : DukePerson]()
+        self.url = url
+        if !load(url) {
+            // TODO: Handle error
+        }
+        if !save() {
+            // TODO: Handle error
+        }
     }
     
     
@@ -170,6 +202,69 @@ class DukePersonDict {
             result += "\(index + 1). \(person.fName) \(person.lName), \(person.role.rawValue), \(person.email) – \(person.DUID)\n"
         }
         return result
+    }
+    
+    
+    /*
+     Reads a JSON file as designated by url, decodes it, and replaces the existing
+     data model with the entries from the JSON file. Returns true if everything worked OK,
+     false if it doesn’t.
+     */
+    func load(_ url: URL) -> Bool {
+        let fileManager = FileManager.default
+        
+        if fileManager.fileExists(atPath: url.path) {
+            // Load data from the JSON file if it exists
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                self.people = try decoder.decode([Int: DukePerson].self, from: data)
+                return true
+            } catch {
+                // TODO: Handle error
+                print("Error loading data from JSON file: \(error)")
+                return false
+            }
+        } else {
+            // Load data from an asset file if the JSON file does not exist
+            if let assetData = NSDataAsset(name: "PeopleJSON")?.data {
+                do {
+                    let decoder = JSONDecoder()
+                    let dukePeopleArray = try decoder.decode([DukePerson].self, from: assetData)
+                    self.people = [:]
+                    for dukePerson in dukePeopleArray {
+                        self.people[dukePerson.DUID] = dukePerson
+                    }
+                    return true
+                } catch {
+                    // TODO: Handle error
+                    print("Error loading data from asset: \(error)")
+                    return false
+                }
+            } else {
+                // TODO: Handle error
+                print("Asset file 'ece564class.json' not found.")
+                return false
+            }
+        }
+    }
+    
+    
+    /*
+     Converts the current data model entries to JSON and writes the JSON string to a pre-determined filename.
+     Returns true if everything works OK, false if it doesn’t.
+     */
+    func save() -> Bool {
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(self.people)
+            try data.write(to: self.url)
+            return true
+        } catch {
+            // TODO: Handle error
+            print("Error saving data: \(error)")
+            return false
+        }
     }
 }
 

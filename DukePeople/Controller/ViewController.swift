@@ -22,11 +22,15 @@ class ViewController: UIViewController {
     let outputView = UITextView()
     let scrollView = UIScrollView()
     
-    let dataModel = DukePersonDict()
     
+    var dataModel: DukePersonDict!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sandboxURL: URL = getDocumentsDirectory()
+        let JSONName = "dukePersonDict.json"
+        dataModel = DukePersonDict(url: sandboxURL.appendingPathComponent(JSONName))
         
         // Fixed layout parameters
         let marginLeft = 16, marginRight = 16, marginTop = 32, marginBaseTop = 64
@@ -252,6 +256,8 @@ class ViewController: UIViewController {
                         errorString = "Find failed, DUID \(enteredDUID) not found!"
                     } else {
                         outputViewInfo! += person!.description + "\n"
+                        // Push a new view
+                        pushNewViewController(person!.fName, person!.lName, person!.description, person!.picture)
                     }
                 } else {
                     let people = dataModel.find(lastName : enteredPerson.lName == "" ? "*" : enteredPerson.lName, firstName : enteredPerson.fName == "" ? "*" : enteredPerson.fName)
@@ -261,6 +267,10 @@ class ViewController: UIViewController {
                     } else {
                         for person in people! {
                             outputViewInfo! += person.description + "\n"
+                        }
+                        if people!.count == 1 {
+                            // Push a new view
+                            pushNewViewController(people![0].fName, people![0].lName, people![0].description, people![0].picture)
                         }
                     }
                 }
@@ -353,6 +363,18 @@ class ViewController: UIViewController {
         let contentHeight = outputView.contentSize.height
         let offsetY = max(0, contentHeight - scrollView.bounds.size.height)
         outputView.setContentOffset(CGPoint(x: 0, y: offsetY), animated: true)
+    }
+    
+    /*
+     Push a stacked student profile view
+     */
+    func pushNewViewController(_ fName: String, _ lName: String, _ description: String, _ url: String) {
+        let pvc = DukePersonVC(nibName: "DukePersonView", bundle: nil)
+        pvc.firstName = fName
+        pvc.lastName = lName
+        pvc.descriptionText = description
+        pvc.imageUrl = url
+        self.present(pvc, animated: true, completion: nil)
     }
     
 }

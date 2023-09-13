@@ -39,6 +39,11 @@
 		C297BE842AA98B6C00AE0592 /* hw1_testcase11.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE702AA98B6C00AE0592 /* hw1_testcase11.png */; };
 		C297BE852AA98B6C00AE0592 /* hw1_testcase1.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE712AA98B6C00AE0592 /* hw1_testcase1.png */; };
 		C297BE872AA98B7900AE0592 /* hw1_testcase21.png in Resources */ = {isa = PBXBuildFile; fileRef = C297BE862AA98B7900AE0592 /* hw1_testcase21.png */; };
+		C2B3631F2AAFD651007D4A6F /* DukePersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3631D2AAFD651007D4A6F /* DukePersonVC.swift */; };
+		C2B363222AAFED5E007D4A6F /* DukePersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B363212AAFED5E007D4A6F /* DukePersonView.xib */; };
+		C2C34C072AB0006500E7B201 /* GetPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C34C062AB0006400E7B201 /* GetPath.swift */; };
+		C2C34C0D2AB0303B00E7B201 /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C34C0C2AB0303B00E7B201 /* GradientImageView.swift */; };
+		C2C34C102AB0FEFA00E7B201 /* BackgroundRemoval in Frameworks */ = {isa = PBXBuildFile; productRef = C2C34C0F2AB0FEFA00E7B201 /* BackgroundRemoval */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +81,10 @@
 		C297BE702AA98B6C00AE0592 /* hw1_testcase11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase11.png; sourceTree = "<group>"; };
 		C297BE712AA98B6C00AE0592 /* hw1_testcase1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase1.png; sourceTree = "<group>"; };
 		C297BE862AA98B7900AE0592 /* hw1_testcase21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw1_testcase21.png; sourceTree = "<group>"; };
+		C2B3631D2AAFD651007D4A6F /* DukePersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DukePersonVC.swift; sourceTree = "<group>"; };
+		C2B363212AAFED5E007D4A6F /* DukePersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DukePersonView.xib; sourceTree = "<group>"; };
+		C2C34C062AB0006400E7B201 /* GetPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPath.swift; sourceTree = "<group>"; };
+		C2C34C0C2AB0303B00E7B201 /* GradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C34C102AB0FEFA00E7B201 /* BackgroundRemoval in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +120,7 @@
 		C2939EDF2AA132CB00B6F9B1 /* DukePeople */ = {
 			isa = PBXGroup;
 			children = (
+				C2B363232AAFF29F007D4A6F /* Util */,
 				C2B3631C2AAA1657007D4A6F /* View */,
 				C297BE5B2AA9883A00AE0592 /* Controller */,
 				C297BE282AA96BD500AE0592 /* Constant */,
@@ -172,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				C2939EE42AA132CB00B6F9B1 /* ViewController.swift */,
+				C2B3631D2AAFD651007D4A6F /* DukePersonVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,10 +191,20 @@
 		C2B3631C2AAA1657007D4A6F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C2B363212AAFED5E007D4A6F /* DukePersonView.xib */,
 				C2939EEB2AA132CC00B6F9B1 /* LaunchScreen.storyboard */,
 				C2939EE62AA132CB00B6F9B1 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C2B363232AAFF29F007D4A6F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C2C34C062AB0006400E7B201 /* GetPath.swift */,
+				C2C34C0C2AB0303B00E7B201 /* GradientImageView.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +223,9 @@
 			dependencies = (
 			);
 			name = Hugo;
+			packageProductDependencies = (
+				C2C34C0F2AB0FEFA00E7B201 /* BackgroundRemoval */,
+			);
 			productName = DukePeople;
 			productReference = C2939EDD2AA132CB00B6F9B1 /* Hugo.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +254,9 @@
 				Base,
 			);
 			mainGroup = C2939ED42AA132CB00B6F9B1;
+			packageReferences = (
+				C2C34C0E2AB0FEFA00E7B201 /* XCRemoteSwiftPackageReference "BackgroundRemoval" */,
+			);
 			productRefGroup = C2939EDE2AA132CB00B6F9B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -251,6 +279,7 @@
 				C297BE722AA98B6C00AE0592 /* hw1_testcase2.png in Resources */,
 				C297BE872AA98B7900AE0592 /* hw1_testcase21.png in Resources */,
 				C297BE752AA98B6C00AE0592 /* hw1_testcase20.png in Resources */,
+				C2B363222AAFED5E007D4A6F /* DukePersonView.xib in Resources */,
 				C297BE7A2AA98B6C00AE0592 /* hw1_testcase15.png in Resources */,
 				C297BE772AA98B6C00AE0592 /* hw1_testcase5.png in Resources */,
 				C297BE742AA98B6C00AE0592 /* hw1_testcase10.png in Resources */,
@@ -281,9 +310,12 @@
 				C2939EE52AA132CB00B6F9B1 /* ViewController.swift in Sources */,
 				C2939EF82AA78A6300B6F9B1 /* DataStructures.swift in Sources */,
 				C2939EF62AA78A4900B6F9B1 /* DataModel.swift in Sources */,
+				C2C34C0D2AB0303B00E7B201 /* GradientImageView.swift in Sources */,
 				C297BE2C2AA96C4F00AE0592 /* Colors.swift in Sources */,
+				C2C34C072AB0006500E7B201 /* GetPath.swift in Sources */,
 				C2939EE12AA132CB00B6F9B1 /* AppDelegate.swift in Sources */,
 				C297BE2A2AA96BF000AE0592 /* Strings.swift in Sources */,
+				C2B3631F2AAFD651007D4A6F /* DukePersonVC.swift in Sources */,
 				C2939EE32AA132CB00B6F9B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +534,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2C34C0E2AB0FEFA00E7B201 /* XCRemoteSwiftPackageReference "BackgroundRemoval" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ezaldeen99/BackgroundRemoval.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2C34C0F2AB0FEFA00E7B201 /* BackgroundRemoval */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2C34C0E2AB0FEFA00E7B201 /* XCRemoteSwiftPackageReference "BackgroundRemoval" */;
+			productName = BackgroundRemoval;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2939ED52AA132CB00B6F9B1 /* Project object */;
 }
