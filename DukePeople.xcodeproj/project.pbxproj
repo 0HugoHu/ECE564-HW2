@@ -15,7 +15,6 @@
 		C20B0B5A2AB24F17001B52A7 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B592AB24F17001B52A7 /* LaunchViewModel.swift */; };
 		C20B0B5C2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B5B2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift */; };
 		C20B0B5E2AB24F37001B52A7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20B0B5D2AB24F37001B52A7 /* Utilities.swift */; };
-		C20B0B662AB25F44001B52A7 /* hw2_person1.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B5F2AB25F44001B52A7 /* hw2_person1.png */; };
 		C20B0B672AB25F44001B52A7 /* hw2_launchscreen2.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B602AB25F44001B52A7 /* hw2_launchscreen2.png */; };
 		C20B0B682AB25F44001B52A7 /* hw2_launchscreen4.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B612AB25F44001B52A7 /* hw2_launchscreen4.png */; };
 		C20B0B692AB25F44001B52A7 /* hw2_launchscreen1.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B622AB25F44001B52A7 /* hw2_launchscreen1.png */; };
@@ -23,6 +22,7 @@
 		C20B0B6C2AB25F44001B52A7 /* hw2_launchscreen3.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B652AB25F44001B52A7 /* hw2_launchscreen3.png */; };
 		C20B0B6F2AB26131001B52A7 /* hw2_person2.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B6D2AB26131001B52A7 /* hw2_person2.png */; };
 		C20B0B702AB26131001B52A7 /* hw2_person4.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B6E2AB26131001B52A7 /* hw2_person4.png */; };
+		C20B0B722AB26362001B52A7 /* hw2_person1.png in Resources */ = {isa = PBXBuildFile; fileRef = C20B0B712AB26362001B52A7 /* hw2_person1.png */; };
 		C2939EE12AA132CB00B6F9B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EE02AA132CB00B6F9B1 /* AppDelegate.swift */; };
 		C2939EE32AA132CB00B6F9B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EE22AA132CB00B6F9B1 /* SceneDelegate.swift */; };
 		C2939EE52AA132CB00B6F9B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2939EE42AA132CB00B6F9B1 /* ViewController.swift */; };
@@ -71,7 +71,6 @@
 		C20B0B592AB24F17001B52A7 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
 		C20B0B5B2AB24F28001B52A7 /* RealityKitLaunchScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitLaunchScreenApp.swift; sourceTree = "<group>"; };
 		C20B0B5D2AB24F37001B52A7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		C20B0B5F2AB25F44001B52A7 /* hw2_person1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_person1.png; sourceTree = "<group>"; };
 		C20B0B602AB25F44001B52A7 /* hw2_launchscreen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_launchscreen2.png; sourceTree = "<group>"; };
 		C20B0B612AB25F44001B52A7 /* hw2_launchscreen4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_launchscreen4.png; sourceTree = "<group>"; };
 		C20B0B622AB25F44001B52A7 /* hw2_launchscreen1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_launchscreen1.png; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		C20B0B652AB25F44001B52A7 /* hw2_launchscreen3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_launchscreen3.png; sourceTree = "<group>"; };
 		C20B0B6D2AB26131001B52A7 /* hw2_person2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_person2.png; sourceTree = "<group>"; };
 		C20B0B6E2AB26131001B52A7 /* hw2_person4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_person4.png; sourceTree = "<group>"; };
+		C20B0B712AB26362001B52A7 /* hw2_person1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hw2_person1.png; sourceTree = "<group>"; };
 		C2939EDD2AA132CB00B6F9B1 /* Hugo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hugo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2939EE02AA132CB00B6F9B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2939EE22AA132CB00B6F9B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,13 +202,13 @@
 		C297BE302AA9800E00AE0592 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C20B0B712AB26362001B52A7 /* hw2_person1.png */,
 				C20B0B6D2AB26131001B52A7 /* hw2_person2.png */,
 				C20B0B6E2AB26131001B52A7 /* hw2_person4.png */,
 				C20B0B622AB25F44001B52A7 /* hw2_launchscreen1.png */,
 				C20B0B602AB25F44001B52A7 /* hw2_launchscreen2.png */,
 				C20B0B652AB25F44001B52A7 /* hw2_launchscreen3.png */,
 				C20B0B612AB25F44001B52A7 /* hw2_launchscreen4.png */,
-				C20B0B5F2AB25F44001B52A7 /* hw2_person1.png */,
 				C20B0B642AB25F44001B52A7 /* hw2_person3.png */,
 				C297BE862AA98B7900AE0592 /* hw1_testcase21.png */,
 				C297BE712AA98B6C00AE0592 /* hw1_testcase1.png */,
@@ -341,6 +341,7 @@
 				C297BE7A2AA98B6C00AE0592 /* hw1_testcase15.png in Resources */,
 				C297BE772AA98B6C00AE0592 /* hw1_testcase5.png in Resources */,
 				C297BE742AA98B6C00AE0592 /* hw1_testcase10.png in Resources */,
+				C20B0B722AB26362001B52A7 /* hw2_person1.png in Resources */,
 				C297BE7E2AA98B6C00AE0592 /* hw1_testcase9.png in Resources */,
 				C20B0B6F2AB26131001B52A7 /* hw2_person2.png in Resources */,
 				C297BE792AA98B6C00AE0592 /* hw1_testcase12.png in Resources */,
@@ -352,7 +353,6 @@
 				C20B0B692AB25F44001B52A7 /* hw2_launchscreen1.png in Resources */,
 				C2939EEA2AA132CC00B6F9B1 /* Assets.xcassets in Resources */,
 				C20B0B682AB25F44001B52A7 /* hw2_launchscreen4.png in Resources */,
-				C20B0B662AB25F44001B52A7 /* hw2_person1.png in Resources */,
 				C297BE842AA98B6C00AE0592 /* hw1_testcase11.png in Resources */,
 				C297BE7C2AA98B6C00AE0592 /* hw1_testcase17.png in Resources */,
 				C297BE2E2AA96CE700AE0592 /* README.md in Resources */,
