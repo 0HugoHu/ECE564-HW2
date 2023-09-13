@@ -42,8 +42,8 @@ Read materials from:
 - [SwiftUI Gradient Blur](https://github.com/unitedadityaa/SwiftUIGradientBlur)
 - [Material - A background material type](https://developer.apple.com/documentation/swiftui/material)
 
-#### 4. The DukePersonView's idea is from [IOS 17 Preview](https://www.apple.com/ios/ios-17-preview/): the new phone call interface
-~Though someone may have stolen my ideas (who knows)~
+#### 4. The DukePersonView's idea is from [iOS 17 Preview](https://www.apple.com/ios/ios-17-preview/): the new phone call interface
+~Though someone may **accidentally** be the same with my ideas (who knows)~
 
 
 <br />
