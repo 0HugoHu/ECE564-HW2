@@ -25,10 +25,10 @@
 
 ## Code Reference
 
-#### 1.The Launch Screen was modified from the code of (@aheze)[https://github.com/aheze/RealityKitLaunchScreen] on GitHub
+#### 1.The Launch Screen was modified from the code of [@aheze](https://github.com/aheze/RealityKitLaunchScreen) on GitHub
 The original and modified code are all in ```DukePeople/LaunchScreen``` folder.
 
-#### 2.The Image Backgroud Removal used (BackgroundRemoval)[https://github.com/Ezaldeen99/BackgroundRemoval] dependency on GitHub
+#### 2.The Image Backgroud Removal used [BackgroundRemoval](https://github.com/Ezaldeen99/BackgroundRemoval) dependency on GitHub
 Use of the Removal model:
 ```swift
 let image = UIImage(named: "child")
